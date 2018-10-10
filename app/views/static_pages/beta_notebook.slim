@@ -1,2 +1,4 @@
 div class= "container #{@user.privileged_on?(@notebook) ? 'admin_hidden' : ''}" id='notebookDisplay'
+  br
+  br
   ==render partial: 'notebook', locals: { notebook: @notebook.notebook, code_cells: @notebook.code_cells }

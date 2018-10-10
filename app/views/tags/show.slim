@@ -7,4 +7,8 @@ div.container
           h1
             span Tag: #{@tag.tag}
 div.container
-  ==render partial: 'notebooks'
+  -if @beta==true
+    ==render partial: 'beta_notebooks_table', locals: {sort_options: true}
+  -else
+    ==render partial: 'notebooks'
+    
