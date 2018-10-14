@@ -28,7 +28,7 @@ put beta CSS here and use the following ID's at the top level CSS selector:
   margin: 0;
 }
 
-#beta_layout #searchHeader {
+#beta_layout .searchHeader {
   background-color: #CF7D3C;
   border: none;
 }
